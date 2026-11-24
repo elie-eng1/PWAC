@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWAC - Website Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>PWAC</h1>
+        <p>Personal Website Access Controller</p>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Website Management</h2>
+
+<div class="stats-container">
+
+    <div class="stat-card">
+        <h3>Total Websites</h3>
+        <p id="totalCount">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Blocked Websites</h3>
+        <p id="blockedCount">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Allowed Websites</h3>
+        <p id="allowedCount">0</p>
+    </div>
+
+</div>
+
+            <div class="add-website">
+                <input
+                    type="text"
+                    id="websiteInput"
+                    placeholder="Enter website domain (e.g. facebook.com)"
+                >
+                <button id="addButton">Add Website</button>
+            </div>
+
+            <h3>Website Rules</h3>
+
+            <div id="websiteList">
+                <p>Loading website rules...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
